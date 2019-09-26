@@ -20,10 +20,9 @@
 #   convergence.
 #===============================================================================
 import numpy as np
+import generate
 
 def get_tran_mat(n, b, t):
-    # matrix dimension dxd
-    d = 2**n
     # Evaluating matrix elements (Taken from weaver paper)
     aa = np.exp((2 - b) / t )
     bb = np.exp(-b/t)
@@ -51,9 +50,6 @@ def get_tran_mat(n, b, t):
     return trans_mat
 
 def power_iter(max_iterations, tolerance, matrix, vec):
-    # Setting initial guess vector
-    init_vec = np.zeros(d)
-    init_vec[0] = 1
     # Finding l-infinity norm of initial vector x
     xp = abs(max(vec, key=abs))
     # Rescaling the initial vector to prevent from blowing up
@@ -82,14 +78,18 @@ def power_iter(max_iterations, tolerance, matrix, vec):
             print("Dominant eigenvector is:", vec)
     return eig_val, vec
 
-n = 5    # number of spins
+n = 5     # number of spins
+d = 2**n  # matrix dimension dxd
 b = 0.01  # magnetic field strength
 t = 2.2   # temperature
 
+# Setting initial guess vector
+init_vec = np.zeros(d)
+init_vec[0] = 1
 # Max number of iterations (set by user)
 max_iter = 200
 # Tolerance (set by user)
 tol = 10**-3
 
-get_tran_mat(n, b, t)
+trans_mat = generate.tran_mat(n, b, t)
 power_iter(max_iter, tol, trans_mat, init_vec)
