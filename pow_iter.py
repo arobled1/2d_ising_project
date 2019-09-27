@@ -32,12 +32,11 @@ def power_iter(max_iterations, tolerance, matrix, vec):
     while i < max_iterations:
         i += 1
         # Matrix multiplying A with the initial vector x
-        #y = np.matmul(matrix, vec)
         for j in range(d):
             if j % 2 == 0:
-                y[j] = (matrix[j][j // 2] + matrix[j][j//2 + 2**(n-1)]) * vec[j]
+                y[j] = matrix[j][j//2] * vec[j//2] + matrix[j][j//2 + 2**(n-1)] * vec[j//2 + 2**(n-1)]
             else:
-                y[j] = (matrix[j][(j-1) // 2] + matrix[j][((j-1)//2) + 2**(n-1)]) *vec[j]
+                y[j] = matrix[j][(j-1)//2] * vec[(j-1)//2] + matrix[j][(j-1)//2 + 2**(n-1)] * vec[(j-1)//2 + 2**(n-1)]
         # Finding the l-infinity norm of the result from Ax.
         # This serves as the dominant eigenvalue.
         eig_val = abs(max(y, key=abs))
@@ -57,7 +56,7 @@ def power_iter(max_iterations, tolerance, matrix, vec):
             print("Dominant eigenvector is:", vec)
     return eig_val, vec
 
-n = 2     # number of spins
+n = 3     # number of spins
 d = 2**n  # matrix dimension dxd
 b = 0.01  # magnetic field strength
 t = 2.2   # temperature
