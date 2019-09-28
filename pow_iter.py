@@ -22,21 +22,30 @@
 import numpy as np
 import generate
 
-def power_iter(max_iterations, tolerance, matrix, vec):
+def power_iter(max_iterations, tolerance, values, columns, rows, vec):
     # Finding l-infinity norm of initial vector x
     xp = abs(max(vec, key=abs))
     # Rescaling the initial vector to prevent from blowing up
     vec = vec / xp
     i = 0
-    y = np.zeros(d)
     while i < max_iterations:
         i += 1
-        # Matrix multiplying A with the initial vector x
+        y = np.zeros(d)
+        print("rows:",rows)
+        print("values:", values)
+        print("columns:", columns)
+        # Matrix multiplying A with the initial vector x.
+        # This is done using the CSR method.
         for j in range(d):
-            if j % 2 == 0:
-                y[j] = matrix[j][j//2] * vec[j//2] + matrix[j][j//2 + 2**(n-1)] * vec[j//2 + 2**(n-1)]
-            else:
-                y[j] = matrix[j][(j-1)//2] * vec[(j-1)//2] + matrix[j][(j-1)//2 + 2**(n-1)] * vec[(j-1)//2 + 2**(n-1)]
+            k = rows[j]
+            # If statement is added because code will not loop over the last row
+            # of the transfer matrix. Edit later.
+            if k == rows[d-1]:
+                y[j] += values[k] * vec[columns[k]] + values[k+1] * vec[columns[k+1]]
+                break
+            while k < rows[j+1]:
+                y[j] += values[k] * vec[columns[k]]
+                k += 1
         # Finding the l-infinity norm of the result from Ax.
         # This serves as the dominant eigenvalue.
         eig_val = abs(max(y, key=abs))
@@ -54,6 +63,7 @@ def power_iter(max_iterations, tolerance, matrix, vec):
             print("Exceeded max iterations. Try a new initial vector.")
             print("Dominant eigenvalue is:", eig_val)
             print("Dominant eigenvector is:", vec)
+        print("vec:", vec)
     return eig_val, vec
 
 n = 3     # number of spins
@@ -67,7 +77,7 @@ init_vec[0] = 1
 # Max number of iterations (set by user)
 max_iter = 200
 # Tolerance (set by user)
-tol = 10**-3
+tol = 10**-6
 
-trans_mat = generate.tran_mat(n, b, t)
-power_iter(max_iter, tol, trans_mat, init_vec)
+val, col, row_ptr = generate.tran_mat(n, b, t)
+power_iter(max_iter, tol, val, col, row_ptr, init_vec)
