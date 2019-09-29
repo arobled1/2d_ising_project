@@ -19,10 +19,8 @@
 % User-Defined Commands
 \newcommand{\be}{\begin{equation}}
 \newcommand{\ee}{\end{equation}}
-\newcommand{\benum}{\begin{enumerate}}
-\newcommand{\eenum}{\end{enumerate}}
-\newcommand{\pd}{\partial}
-\newcommand{\dg}{\dagger}
+\newcommand{\tk}{\textbf{K}}
+\newcommand{\ti}{\textbf{I}}
 %==============================================================================%
 %                             Title Information                                %
 %==============================================================================%
@@ -51,28 +49,72 @@ Since each lattice site has only 2 possible states, we can say that there are $2
 
 In order to relate the ising model to a real system, we can think of this model in the context of ferromagnetism.
 Each lattice site can be thought of as an atom subject to some magnetic field, which creates an overall magnetization of the system.
-The strength of the interaction between each atom and the field is denoted by $E$.
+The strength of the interaction between each atom and the field is denoted by $B$.
 In this context, the states of each lattice site can be though of as the spin of each atom with $\sigma_i = +1$ if the atom is spin up and $\sigma_i = -1$ if the atom is spin down.
 Since the atoms are subject to a field, a magnetic moment is induced and interactions between the atoms can influence whether they align with each other or align opposite to each other.
 The strength of the interaction between each atom and neighboring atoms is denoted by $J$.
-We will assume that each atom only feels interactions between its 'nearest neighbors'.
-In other words, atom $i$ will only interact with atoms $i - 1$ and $i + 1$.
 
-We now have enough information to define the Hamiltonian $H$ of the system,
+We now have enough information to define the Hamiltonian $H$ of our N-spin system,
 \be
-  H(\sigma_1, \dots, \sigma_N) = - \sum_{ij} E \sigma_i \sigma_j - \sum_i J \sigma_i .
+  H(\sigma_1, \dots, \sigma_N) = - \sum_{ij} J \sigma_i \sigma_j - \sum_i B \sigma_i .
 \ee
 The minus signs in front of both terms comes from us assuming a ferromagnetic system.
-Therefore, the signs of $E$ and $J$ both become positive.
+Therefore, the signs of $J$ and $B$ both become positive.
 This is because in a ferromagnetic system, the total energy is lowered when the spin of each magnetic moment alligns with each other because $\sigma_i \sigma_j = +1$, which makes the first term overall negative.
 Conversely, the total energy is increased when the spin of each magnetic moment alligns opposite each other because $\sigma_i \sigma_j = -1$, which makes the first term overall positive.
-Likewise, when the moments allign in the direction of the field the total energy is decreased, which occurs when $J$ is positive.
+Likewise, when the moments allign in the direction of the field the total energy is decreased, which occurs when $B$ is positive.
 
-In order to obtain thermodynamic quantities, we introduce the partition function as a function of the number of lattice sites N, the temperature of the system T, E, and J,
+We will begin to make a couple of assumptions in order to make the notation easier.
+We will first assume that each atom only feels interactions between its 'nearest neighbors'.
+In other words, atom $i$ will only interact with atoms $i - 1$ and $i + 1$.
+Next, we will assume what is known as the 'wrap-around' model, which means that we will consider a N-spin lattice that wraps around itself so that it takes the shape of a necklace.
+The periodic condition can be defined mathematically as $\sigma_{N+1} = \sigma_1$.
+We these assumptions in place, the Hamiltonian can be defined as,
 \be
-  Z(E, J, N, T) = \sum_i e^{- \beta H}
+  H(\sigma_1, \dots, \sigma_N) = - \sum_{i} J \sigma_i \sigma_{i+1} - \sum_i B \sigma_i .
 \ee
-where $\beta$ is the inverse of temperature multiplied by boltzmann's constant, $\beta = \frac{1}{k_B T}$. 
+
+In order to obtain thermodynamic quantities, we introduce the partition function as a function of the number of lattice sites N, the temperature of the system T, atomic interaction strength E, and field strength J,
+\be \label{eq:partition}
+  Z(E, J, N, T) = \sum_{{\sigma}} e^{- \beta H(\sigma_1, \dots, \sigma_N)} = \sum_{{\sigma}} e^{- \beta E(\sigma_1, \dots, \sigma_N)} = \sum_{\sigma_1} \dots \sum_{\sigma_N} e^{- \beta( - \sum_{i} J \sigma_i \sigma_{i+1} - \sum_i B \sigma_i)}
+\ee
+where $\beta$ is the inverse of temperature multiplied by boltzmann's constant, i.e. $\beta = \frac{1}{k_B T}$.
+
+To evaluate the sums, we will first recognize that the total energy can be written as a sum of energies
+\be
+  E(\sigma_1, \dots, \sigma_N) = E(\sigma_1, \sigma_2) + E(\sigma_2, \sigma_3) + \dots + E(\sigma_N, \sigma_1)
+\ee
+because of our nearest neighbors interaction assumption.
+Inserting this into equation (\ref{eq:partition}), we get
+\be
+  Z = \sum_{\sigma_1} \dots \sum_{\sigma_N} e^{-\beta E(\sigma_1, \sigma_2)} e^{-\beta E(\sigma_2, \sigma_3)} \dots e^{- \beta E(\sigma_N, \sigma_1)}
+\ee
+where $E(\sigma_i, \sigma_j)$ is the energy
+Using bra-ket notation, we can define a transfer matrix \textbf{K}, where each element is
+\be
+  K_{\sigma_i \sigma_j} = \braket{\sigma_i | \tk | \sigma_j} = e^{- \beta E(\sigma_i, \sigma_j)} .
+\ee
+Since $\sigma_i$ only has two states, the transfer matrix is a 2x2 matrix.
+The partition function can then be written in bra-ket notation as
+\be
+  Z = \sum_{\sigma_1} \dots \sum_{\sigma_N} \braket{\sigma_1 | \tk | \sigma_2} \braket{\sigma_2 | \tk | \sigma_3} \dots \braket{\sigma_N | \tk | \sigma_1}
+\ee
+Since the sums are independent, we can move them around to see that we can impose the resolution of identity N - 1 times,
+\be
+  \begin{split}
+    Z &= \sum_{\sigma_1} \bra{\sigma_1} \tk \Big[ \sum_{\sigma_2} \ket{\sigma_2} \bra{\sigma_2} \Big] \tk \Big[ \sum_{\sigma_3} \ket{\sigma_3} \bra{\sigma_3} \Big] \tk \dots \tk \Big[ \sum_{\sigma_N} \ket{\sigma_N} \bra{\sigma_N} \Big] \tk \ket{\sigma_1} \\
+    &= \sum_{\sigma_1} \bra{\sigma_1} \tk \dots \tk \ket{\sigma_1}
+  \end{split}
+\ee
+which means that each term in brackets is equivalent to the identity matrix \ti.
+This leaves us with one sum and the transfer matrix being mutliplied N times,
+\be
+  Z = \sum_{\sigma_1} \bra{\sigma_1} \tk^N \ket{\sigma_1}
+\ee
+which simplifies to the trace,
+\be
+  Z = \text{Tr}[\tk^N]
+\ee
 \bibliography{mybib}
 \bibliographystyle{plain}
 
