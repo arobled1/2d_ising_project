@@ -60,10 +60,19 @@ In other words, atom $i$ will only interact with atoms $i - 1$ and $i + 1$.
 
 We now have enough information to define the Hamiltonian $H$ of the system,
 \be
-  H(\sigma_1, \dots, \sigma_N) = \sum_{ij} E \sigma_i \sigma_j - \sum_i J \sigma_i .
+  H(\sigma_1, \dots, \sigma_N) = - \sum_{ij} E \sigma_i \sigma_j - \sum_i J \sigma_i .
 \ee
-The
+The minus signs in front of both terms comes from us assuming a ferromagnetic system.
+Therefore, the signs of $E$ and $J$ both become positive.
+This is because in a ferromagnetic system, the total energy is lowered when the spin of each magnetic moment alligns with each other because $\sigma_i \sigma_j = +1$, which makes the first term overall negative.
+Conversely, the total energy is increased when the spin of each magnetic moment alligns opposite each other because $\sigma_i \sigma_j = -1$, which makes the first term overall positive.
+Likewise, when the moments allign in the direction of the field the total energy is decreased, which occurs when $J$ is positive.
 
+In order to obtain thermodynamic quantities, we introduce the partition function as a function of the number of lattice sites N, the temperature of the system T, E, and J,
+\be
+  Z(E, J, N, T) = \sum_i e^{- \beta H}
+\ee
+where $\beta$ is the inverse of temperature multiplied by boltzmann's constant, $\beta = \frac{1}{k_B T}$. 
 \bibliography{mybib}
 \bibliographystyle{plain}
 
