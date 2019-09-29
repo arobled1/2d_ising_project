@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex notes"] 1569797181 "notes.aux" "notes.bbl" "notes" 1569799649
+["bibtex notes"] 1569797181 "notes.aux" "notes.bbl" "notes" 1569801154
   "/usr/local/texlive/2019/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "mybib.bib" 1569782558 480 6f14cec61bfcc62ed8ccc1f603eb397e ""
-  "notes.aux" 1569799590 355 de9a246c9446abd27693383aa620c904 "pdflatex"
+  "notes.aux" 1569801153 355 de9a246c9446abd27693383aa620c904 "pdflatex"
   (generated)
   "notes.blg"
   "notes.bbl"
-["pdflatex"] 1569799590 "notes.tex" "notes.pdf" "notes" 1569799649
-  "/dev/null" 1569799644 0 d41d8cd98f00b204e9800998ecf8427e ""
+["pdflatex"] 1569801153 "notes.tex" "notes.pdf" "notes" 1569801154
+  "/dev/null" 1569801150 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -93,6 +93,8 @@
   "/usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty" 1556922606 4520 0716f6a7b68cb2917349764402d33f2d ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1556922606 81617 00424b5835d3059b1495f2efccecaf6c ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1279039959 678 4792914a8f45be57bb98413425e4c7af ""
+  "/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mathtools.sty" 1515449928 53430 0411f0481da6078e76fd7de46531d2e0 ""
+  "/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1496786006 5317 cf75154a8a7e6436f05a5be497f0b05e ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/mhchem/mhchem.sty" 1529960175 133481 dc82a4183457b704dd7d0522a9b06baf ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty" 1463608860 12095 5337833c991d80788a43d3ce26bd1c46 ""
   "/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty" 1463608860 7075 2fe3d848bba95f139de11ded085e74aa ""
@@ -102,9 +104,9 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "notes.aux" 1569799590 355 de9a246c9446abd27693383aa620c904 "pdflatex"
+  "notes.aux" 1569801153 355 de9a246c9446abd27693383aa620c904 "pdflatex"
   "notes.bbl" 1569797181 411 216e811aef4915d8902fd7ea83adcb49 "bibtex notes"
-  "notes.tex" 1569799648 7616 68003cc9a7775cba6966cdefe70631b5 ""
+  "notes.tex" 1569801152 8617 ac8582f32c63c53c9ff85ce241a4d2b7 ""
   (generated)
   "notes.pdf"
   "notes.log"

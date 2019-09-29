@@ -38,6 +38,12 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/braket/braket.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/braket/braket.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/caption/subcaption.sty
@@ -78,8 +84,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/chemgreek/chemgreek.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty

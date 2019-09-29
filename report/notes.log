@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  29 SEP 2019 19:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  29 SEP 2019 19:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -106,9 +106,39 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count100
+\calc@Bcount=\count101
+\calc@Adimen=\dimen114
+\calc@Bdimen=\dimen115
+\calc@Askip=\skip46
+\calc@Bskip=\skip47
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count102
+\calc@Cskip=\skip48
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count103
+\l_MT_multwidth_dim=\dimen116
+\origjot=\skip49
+\l_MT_shortvdotswithinadjustabove_dim=\dimen117
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen118
+\l_MT_above_intertext_sep=\dimen119
+\l_MT_below_intertext_sep=\dimen120
+\l_MT_above_shortintertext_sep=\dimen121
+\l_MT_below_shortintertext_sep=\dimen122
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count100
+\c@float@type=\count104
 \float@exts=\toks22
 \float@box=\box29
 \@float@everytoks=\toks23
@@ -120,42 +150,42 @@ Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
  (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen114
-\captionmargin@=\dimen115
-\captionwidth=\dimen116
-\caption@tempdima=\dimen117
-\caption@indent=\dimen118
-\caption@parindent=\dimen119
-\caption@hangindent=\dimen120
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@tempdima=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
 )
-\c@caption@flags=\count101
-\c@ContinuedFloat=\count102
+\c@caption@flags=\count105
+\c@ContinuedFloat=\count106
 Package caption Info: float package is loaded.
 )
-\c@subfigure=\count103
-\c@subtable=\count104
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+\c@subfigure=\count107
+\c@subtable=\count108
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 ) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-)
-(/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count105
-\Gm@cntv=\count106
-\c@Gm@tempcnt=\count107
-\Gm@bindingoffset=\dimen121
-\Gm@wd@mp=\dimen122
-\Gm@odd@mp=\dimen123
-\Gm@even@mp=\dimen124
-\Gm@layoutwidth=\dimen125
-\Gm@layoutheight=\dimen126
-\Gm@layouthoffset=\dimen127
-\Gm@layoutvoffset=\dimen128
+\Gm@cnth=\count109
+\Gm@cntv=\count110
+\c@Gm@tempcnt=\count111
+\Gm@bindingoffset=\dimen130
+\Gm@wd@mp=\dimen131
+\Gm@odd@mp=\dimen132
+\Gm@even@mp=\dimen133
+\Gm@layoutwidth=\dimen134
+\Gm@layoutheight=\dimen135
+\Gm@layouthoffset=\dimen136
+\Gm@layoutvoffset=\dimen137
 \Gm@dimlist=\toks24
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/mhchem/mhchem.sty
 Package: mhchem 2018/06/22 v4.08 for typesetting chemical formulae
@@ -163,130 +193,130 @@ Package: mhchem 2018/06/22 v4.08 for typesetting chemical formulae
 Package: expl3 2019-05-07 L3 programming layer (loader) 
  (/usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2019-05-07 L3 programming layer (code)
-\c_max_int=\count108
-\l_tmpa_int=\count109
-\l_tmpb_int=\count110
-\g_tmpa_int=\count111
-\g_tmpb_int=\count112
-\g__kernel_prg_map_int=\count113
-\c__ior_term_ior=\count114
-\c_log_iow=\count115
-\l_iow_line_count_int=\count116
-\l__iow_line_target_int=\count117
-\l__iow_one_indent_int=\count118
-\l__iow_indent_int=\count119
-\c_zero_dim=\dimen129
-\c_max_dim=\dimen130
-\l_tmpa_dim=\dimen131
-\l_tmpb_dim=\dimen132
-\g_tmpa_dim=\dimen133
-\g_tmpb_dim=\dimen134
-\c_zero_skip=\skip46
-\c_max_skip=\skip47
-\l_tmpa_skip=\skip48
-\l_tmpb_skip=\skip49
-\g_tmpa_skip=\skip50
-\g_tmpb_skip=\skip51
+\c_max_int=\count112
+\l_tmpa_int=\count113
+\l_tmpb_int=\count114
+\g_tmpa_int=\count115
+\g_tmpb_int=\count116
+\g__kernel_prg_map_int=\count117
+\c__ior_term_ior=\count118
+\c_log_iow=\count119
+\l_iow_line_count_int=\count120
+\l__iow_line_target_int=\count121
+\l__iow_one_indent_int=\count122
+\l__iow_indent_int=\count123
+\c_zero_dim=\dimen138
+\c_max_dim=\dimen139
+\l_tmpa_dim=\dimen140
+\l_tmpb_dim=\dimen141
+\g_tmpa_dim=\dimen142
+\g_tmpb_dim=\dimen143
+\c_zero_skip=\skip50
+\c_max_skip=\skip51
+\l_tmpa_skip=\skip52
+\l_tmpb_skip=\skip53
+\g_tmpa_skip=\skip54
+\g_tmpb_skip=\skip55
 \c_zero_muskip=\muskip11
 \c_max_muskip=\muskip12
 \l_tmpa_muskip=\muskip13
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count120
-\l__intarray_loop_int=\count121
-\c__intarray_sp_dim=\dimen135
-\g__intarray_font_int=\count122
-\c__fp_leading_shift_int=\count123
-\c__fp_middle_shift_int=\count124
-\c__fp_trailing_shift_int=\count125
-\c__fp_big_leading_shift_int=\count126
-\c__fp_big_middle_shift_int=\count127
-\c__fp_big_trailing_shift_int=\count128
-\c__fp_Bigg_leading_shift_int=\count129
-\c__fp_Bigg_middle_shift_int=\count130
-\c__fp_Bigg_trailing_shift_int=\count131
-\c__kernel_randint_max_int=\count132
-\g__fp_array_int=\count133
-\l__fp_array_loop_int=\count134
-\l__sort_length_int=\count135
-\l__sort_min_int=\count136
-\l__sort_top_int=\count137
-\l__sort_max_int=\count138
-\l__sort_true_max_int=\count139
-\l__sort_block_int=\count140
-\l__sort_begin_int=\count141
-\l__sort_end_int=\count142
-\l__sort_A_int=\count143
-\l__sort_B_int=\count144
-\l__sort_C_int=\count145
-\l__tl_analysis_normal_int=\count146
-\l__tl_analysis_index_int=\count147
-\l__tl_analysis_nesting_int=\count148
-\l__tl_analysis_type_int=\count149
-\l__regex_internal_a_int=\count150
-\l__regex_internal_b_int=\count151
-\l__regex_internal_c_int=\count152
-\l__regex_balance_int=\count153
-\l__regex_group_level_int=\count154
-\l__regex_mode_int=\count155
-\c__regex_cs_in_class_mode_int=\count156
-\c__regex_cs_mode_int=\count157
-\l__regex_catcodes_int=\count158
-\l__regex_default_catcodes_int=\count159
-\c__regex_catcode_D_int=\count160
-\c__regex_catcode_S_int=\count161
-\c__regex_catcode_L_int=\count162
-\c__regex_catcode_O_int=\count163
-\c__regex_catcode_A_int=\count164
-\c__regex_all_catcodes_int=\count165
-\l__regex_show_lines_int=\count166
-\l__regex_min_state_int=\count167
-\l__regex_max_state_int=\count168
-\l__regex_left_state_int=\count169
-\l__regex_right_state_int=\count170
-\l__regex_capturing_group_int=\count171
-\l__regex_min_pos_int=\count172
-\l__regex_max_pos_int=\count173
-\l__regex_curr_pos_int=\count174
-\l__regex_start_pos_int=\count175
-\l__regex_success_pos_int=\count176
-\l__regex_curr_char_int=\count177
-\l__regex_curr_catcode_int=\count178
-\l__regex_last_char_int=\count179
-\l__regex_case_changed_char_int=\count180
-\l__regex_curr_state_int=\count181
-\l__regex_step_int=\count182
-\l__regex_min_active_int=\count183
-\l__regex_max_active_int=\count184
-\l__regex_replacement_csnames_int=\count185
-\l__regex_match_count_int=\count186
-\l__regex_min_submatch_int=\count187
-\l__regex_submatch_int=\count188
-\l__regex_zeroth_submatch_int=\count189
-\g__regex_trace_regex_int=\count190
+\l_keys_choice_int=\count124
+\l__intarray_loop_int=\count125
+\c__intarray_sp_dim=\dimen144
+\g__intarray_font_int=\count126
+\c__fp_leading_shift_int=\count127
+\c__fp_middle_shift_int=\count128
+\c__fp_trailing_shift_int=\count129
+\c__fp_big_leading_shift_int=\count130
+\c__fp_big_middle_shift_int=\count131
+\c__fp_big_trailing_shift_int=\count132
+\c__fp_Bigg_leading_shift_int=\count133
+\c__fp_Bigg_middle_shift_int=\count134
+\c__fp_Bigg_trailing_shift_int=\count135
+\c__kernel_randint_max_int=\count136
+\g__fp_array_int=\count137
+\l__fp_array_loop_int=\count138
+\l__sort_length_int=\count139
+\l__sort_min_int=\count140
+\l__sort_top_int=\count141
+\l__sort_max_int=\count142
+\l__sort_true_max_int=\count143
+\l__sort_block_int=\count144
+\l__sort_begin_int=\count145
+\l__sort_end_int=\count146
+\l__sort_A_int=\count147
+\l__sort_B_int=\count148
+\l__sort_C_int=\count149
+\l__tl_analysis_normal_int=\count150
+\l__tl_analysis_index_int=\count151
+\l__tl_analysis_nesting_int=\count152
+\l__tl_analysis_type_int=\count153
+\l__regex_internal_a_int=\count154
+\l__regex_internal_b_int=\count155
+\l__regex_internal_c_int=\count156
+\l__regex_balance_int=\count157
+\l__regex_group_level_int=\count158
+\l__regex_mode_int=\count159
+\c__regex_cs_in_class_mode_int=\count160
+\c__regex_cs_mode_int=\count161
+\l__regex_catcodes_int=\count162
+\l__regex_default_catcodes_int=\count163
+\c__regex_catcode_D_int=\count164
+\c__regex_catcode_S_int=\count165
+\c__regex_catcode_L_int=\count166
+\c__regex_catcode_O_int=\count167
+\c__regex_catcode_A_int=\count168
+\c__regex_all_catcodes_int=\count169
+\l__regex_show_lines_int=\count170
+\l__regex_min_state_int=\count171
+\l__regex_max_state_int=\count172
+\l__regex_left_state_int=\count173
+\l__regex_right_state_int=\count174
+\l__regex_capturing_group_int=\count175
+\l__regex_min_pos_int=\count176
+\l__regex_max_pos_int=\count177
+\l__regex_curr_pos_int=\count178
+\l__regex_start_pos_int=\count179
+\l__regex_success_pos_int=\count180
+\l__regex_curr_char_int=\count181
+\l__regex_curr_catcode_int=\count182
+\l__regex_last_char_int=\count183
+\l__regex_case_changed_char_int=\count184
+\l__regex_curr_state_int=\count185
+\l__regex_step_int=\count186
+\l__regex_min_active_int=\count187
+\l__regex_max_active_int=\count188
+\l__regex_replacement_csnames_int=\count189
+\l__regex_match_count_int=\count190
+\l__regex_min_submatch_int=\count191
+\l__regex_submatch_int=\count192
+\l__regex_zeroth_submatch_int=\count193
+\g__regex_trace_regex_int=\count194
 \c_empty_box=\box31
 \l_tmpa_box=\box32
 \l_tmpb_box=\box33
 \g_tmpa_box=\box34
 \g_tmpb_box=\box35
-\l__box_top_dim=\dimen136
-\l__box_bottom_dim=\dimen137
-\l__box_left_dim=\dimen138
-\l__box_right_dim=\dimen139
-\l__box_top_new_dim=\dimen140
-\l__box_bottom_new_dim=\dimen141
-\l__box_left_new_dim=\dimen142
-\l__box_right_new_dim=\dimen143
+\l__box_top_dim=\dimen145
+\l__box_bottom_dim=\dimen146
+\l__box_left_dim=\dimen147
+\l__box_right_dim=\dimen148
+\l__box_top_new_dim=\dimen149
+\l__box_bottom_new_dim=\dimen150
+\l__box_left_new_dim=\dimen151
+\l__box_right_new_dim=\dimen152
 \l__box_internal_box=\box36
 \l__coffin_internal_box=\box37
-\l__coffin_internal_dim=\dimen144
-\l__coffin_offset_x_dim=\dimen145
-\l__coffin_offset_y_dim=\dimen146
-\l__coffin_x_dim=\dimen147
-\l__coffin_y_dim=\dimen148
-\l__coffin_x_prime_dim=\dimen149
-\l__coffin_y_prime_dim=\dimen150
+\l__coffin_internal_dim=\dimen153
+\l__coffin_offset_x_dim=\dimen154
+\l__coffin_offset_y_dim=\dimen155
+\l__coffin_x_dim=\dimen156
+\l__coffin_y_dim=\dimen157
+\l__coffin_x_prime_dim=\dimen158
+\l__coffin_y_prime_dim=\dimen159
 \c_empty_coffin=\box38
 \l__coffin_aligned_coffin=\box39
 \l__coffin_aligned_internal_coffin=\box40
@@ -294,69 +324,57 @@ Package: expl3 2019-05-07 L3 programming layer (code)
 \l_tmpb_coffin=\box42
 \g_tmpa_coffin=\box43
 \g_tmpb_coffin=\box44
-\l__coffin_bounding_shift_dim=\dimen151
-\l__coffin_left_corner_dim=\dimen152
-\l__coffin_right_corner_dim=\dimen153
-\l__coffin_bottom_corner_dim=\dimen154
-\l__coffin_top_corner_dim=\dimen155
-\l__coffin_scaled_total_height_dim=\dimen156
-\l__coffin_scaled_width_dim=\dimen157
+\l__coffin_bounding_shift_dim=\dimen160
+\l__coffin_left_corner_dim=\dimen161
+\l__coffin_right_corner_dim=\dimen162
+\l__coffin_bottom_corner_dim=\dimen163
+\l__coffin_top_corner_dim=\dimen164
+\l__coffin_scaled_total_height_dim=\dimen165
+\l__coffin_scaled_width_dim=\dimen166
 \c__coffin_empty_coffin=\box45
 \l__coffin_display_coffin=\box46
 \l__coffin_display_coord_coffin=\box47
 \l__coffin_display_pole_coffin=\box48
-\l__coffin_display_offset_dim=\dimen158
-\l__coffin_display_x_dim=\dimen159
-\l__coffin_display_y_dim=\dimen160
+\l__coffin_display_offset_dim=\dimen167
+\l__coffin_display_x_dim=\dimen168
+\l__coffin_display_y_dim=\dimen169
 \g__file_internal_ior=\read1
-\l__seq_internal_a_int=\count191
-\l__seq_internal_b_int=\count192
-\c__deprecation_minus_one=\count193
+\l__seq_internal_a_int=\count195
+\l__seq_internal_b_int=\count196
+\c__deprecation_minus_one=\count197
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2019-04-06 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count194
+\l__driver_color_stack_int=\count198
 \l__driver_pdf_tmp_box=\box49
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2019-05-03 LaTeX2e option processing using LaTeX3 keys
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count195
-\calc@Bcount=\count196
-\calc@Adimen=\dimen161
-\calc@Bdimen=\dimen162
-\calc@Askip=\skip52
-\calc@Bskip=\skip53
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count197
-\calc@Cskip=\skip54
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/chemgreek/chemgreek.sty (/usr/local/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2019-05-03 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count198
-\g__xparse_grabber_int=\count199
-\l__xparse_m_args_int=\count266
-\l__xparse_v_nesting_int=\count267
+\l__xparse_current_arg_int=\count199
+\g__xparse_grabber_int=\count266
+\l__xparse_m_args_int=\count267
+\l__xparse_v_nesting_int=\count268
 )
 Package: chemgreek 2016/12/20 v1.1 interfaceforuprightgreeklettersforuseinchemistry (CN)
-\l__chemgreek_tmpa_int=\count268
-\g__chemgreek_tmpa_int=\count269
+\l__chemgreek_tmpa_int=\count269
+\g__chemgreek_tmpa_int=\count270
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count270
-\__mhchem_arrow_extPgfLength_skip=\skip55
-\mhchem@minispace@tmp=\skip56
-\mhchem@minibackspace@tmp=\skip57
-\mhchem@bondwidth=\skip58
-\mhchem@bondheight=\skip59
-\mhchem@smallbondwidth@tmpA=\skip60
-\mhchem@smallbondwidth@tmpB=\skip61
-\mhchem@smallbondwidth=\skip62
-\mhchem@bondtmp@minussidebearingleft=\skip63
-\mhchem@bondtmp@minussidebearingright=\skip64
-\l__mhchem_option_version_int=\count271
-\mhchem@option@minusmathsidebearingleft=\dimen163
-\mhchem@option@minusmathsidebearingright=\dimen164
-\mhchem@option@minustextsidebearingleft=\dimen165
-\mhchem@option@minustextsidebearingright=\dimen166
+\l__mhchem_ce_distanceFromLastComma_int=\count271
+\__mhchem_arrow_extPgfLength_skip=\skip56
+\mhchem@minispace@tmp=\skip57
+\mhchem@minibackspace@tmp=\skip58
+\mhchem@bondwidth=\skip59
+\mhchem@bondheight=\skip60
+\mhchem@smallbondwidth@tmpA=\skip61
+\mhchem@smallbondwidth@tmpB=\skip62
+\mhchem@smallbondwidth=\skip63
+\mhchem@bondtmp@minussidebearingleft=\skip64
+\mhchem@bondtmp@minussidebearingright=\skip65
+\l__mhchem_option_version_int=\count272
+\mhchem@option@minusmathsidebearingleft=\dimen170
+\mhchem@option@minusmathsidebearingright=\dimen171
+\mhchem@option@minustextsidebearingleft=\dimen172
+\mhchem@option@minustextsidebearingright=\dimen173
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
@@ -364,30 +382,30 @@ Package: cite 2015/02/27  v 5.5
 ) (./notes.aux)
 \openout1 = `notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
  (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count272
-\scratchdimen=\dimen167
+\scratchcounter=\count273
+\scratchdimen=\dimen174
 \scratchbox=\box50
-\nofMPsegments=\count273
-\nofMParguments=\count274
+\nofMPsegments=\count274
+\nofMParguments=\count275
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count275
-\MPscratchDim=\dimen168
-\MPnumerator=\count276
-\makeMPintoPDFobject=\count277
+\MPscratchCnt=\count276
+\MPscratchDim=\dimen175
+\MPnumerator=\count277
+\makeMPintoPDFobject=\count278
 \everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -460,29 +478,29 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Package chemgreek Info: Activating mapping `default' on line 31.
+Package chemgreek Info: Activating mapping `default' on line 32.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+LaTeX Font Info:    Try loading font information for U+msa on input line 34.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+LaTeX Font Info:    Try loading font information for U+msb on input line 34.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./notes.bbl) [2] (./notes.aux) ) 
 Here is how much of TeX's memory you used:
- 14648 strings out of 492616
- 271327 string characters out of 6129482
- 323698 words of memory out of 5000000
- 18467 multiletter control sequences out of 15000+600000
+ 15117 strings out of 492616
+ 279946 string characters out of 6129482
+ 337163 words of memory out of 5000000
+ 18929 multiletter control sequences out of 15000+600000
  541166 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,19n,63p,362b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2019/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on notes.pdf (2 pages, 151299 bytes).
+Output written on notes.pdf (2 pages, 154238 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream

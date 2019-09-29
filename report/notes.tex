@@ -8,6 +8,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{braket}
+\usepackage{mathtools}
 \usepackage{float}
 \usepackage{subcaption}
 \usepackage[margin=0.7in]{geometry}
@@ -115,6 +116,21 @@ which simplifies to the trace,
 \be
   Z = \text{Tr}[\tk^N]
 \ee
+Instead of multiplying the transfer matrix N - 1 times and finding the trace of the result, we can diagonalize \tk by performing an eigendecomposition.
+\be
+  \tk = \textbf{X} \textbf{D} \textbf{X}^{-1}
+\ee
+This gives us a diagonal matrix \textbf{D} of the eigenvalues of \textbf{K} and a matrix \textbf{X} where the ith column corresponds to the eigenvector of the ith eigenvalue.
+Since \textbf{K} and $\tk^N$ share the same eigenvectors, we can replace $\tk^N$ to get
+\be
+  Z = \text{Tr}[\textbf{X} \textbf{D}^N \textbf{X}^{-1}] = \text{Tr}[\textbf{D}^N] = \lambda_1^N + \lambda_2^N
+\ee
+If we assume that $\lambda_1$ is the dominant eigenvalue ($\lambda_1 > \lambda_2$) then in the thermodynamic limit,
+\be
+  Z = \lambda_1^N + \lambda_2^N = \lambda_1^N \Big(1 + \frac{\lambda_2^N}{\lambda_1^N} \Big) \xrightarrow[N \rightarrow \infty]{} \lambda_1^N .
+\ee
+This means that all we really need for the partition function is to find the dominant eigenvalue of the transfer matrix!
+
 \bibliography{mybib}
 \bibliographystyle{plain}
 
