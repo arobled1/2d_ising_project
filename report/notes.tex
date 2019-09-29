@@ -12,6 +12,7 @@
 \usepackage{subcaption}
 \usepackage[margin=0.7in]{geometry}
 \usepackage[version=4]{mhchem}
+\usepackage{cite}
 %==============================================================================%
 %                           User-Defined Commands                              %
 %==============================================================================%
@@ -32,8 +33,39 @@
 \begin{document}
 
 \maketitle
-
+9/29/19 Notes will be edited later and a 'real' report will be made in a couple weeks.
 This document is going to serve as my notes while I progress but will be written in the style of a report.
+The purpose of the project is to make use of the Fast Randomized Iteration (FRI) method described in the paper by Lim and Weaver \cite{lim_weare}.
 \section{Background}
+Since the main focus of the report is to analyze the FRI method, I will only provide enough information regarding the ising model to make sense of what the variables mean and where they come from. There are lots of resources devoted to understanding the ising model and I will pull most of my information from the paper by Cipra \cite{cipra}.
+
+\subsection{1-D Ising Model}
+The ising model is used often to understand the physics of phase transitions.
+But before diving into that, we first need to set the stage.
+Consider a 1 dimensional lattice of N points, which we call 'lattice sites'.
+The line segment between each lattice site is called a 'bond' and the lattice sites adjacent to a particular lattice site is called its 'nearest neighbors'.
+
+The possible states of each lattice site is denoted by $\sigma_i$ and we will consider $\sigma_i = \pm 1$, i.e. each lattice site has only 2 possible states.
+So the configuration of the system is denoted by a set of all the states of each lattice site $(\sigma_1, \dots, \sigma_N)$.
+Since each lattice site has only 2 possible states, we can say that there are $2^N$ configurations for the system.
+
+In order to relate the ising model to a real system, we can think of this model in the context of ferromagnetism.
+Each lattice site can be thought of as an atom subject to some magnetic field, which creates an overall magnetization of the system.
+The strength of the interaction between each atom and the field is denoted by $E$.
+In this context, the states of each lattice site can be though of as the spin of each atom with $\sigma_i = +1$ if the atom is spin up and $\sigma_i = -1$ if the atom is spin down.
+Since the atoms are subject to a field, a magnetic moment is induced and interactions between the atoms can influence whether they align with each other or align opposite to each other.
+The strength of the interaction between each atom and neighboring atoms is denoted by $J$.
+We will assume that each atom only feels interactions between its 'nearest neighbors'.
+In other words, atom $i$ will only interact with atoms $i - 1$ and $i + 1$.
+
+We now have enough information to define the Hamiltonian $H$ of the system,
+\be
+  H(\sigma_1, \dots, \sigma_N) = \sum_{ij} E \sigma_i \sigma_j - \sum_i J \sigma_i .
+\ee
+The
+
+\bibliography{mybib}
+\bibliographystyle{plain}
+
 
 \end{document}

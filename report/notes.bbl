@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+
+\bibitem{cipra}
+Barry~A. Cipra.
+\newblock An introduction to the ising model.
+\newblock {\em The American Mathematical Monthly}, 94(10):937, 1987.
+
+\bibitem{lim_weare}
+Lek-Heng Lim and Jonathan Weare.
+\newblock Fast randomized iteration: Diffusion monte carlo through the lens of
+  numerical linear algebra.
+\newblock {\em SIAM Review}, 59(3):547–587, 2017.
+
+\end{thebibliography}
