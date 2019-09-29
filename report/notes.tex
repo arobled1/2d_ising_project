@@ -33,6 +33,7 @@
 
 \maketitle
 9/29/19 Notes will be edited later and a 'real' report will be made in a couple weeks.
+
 This document is going to serve as my notes while I progress but will be written in the style of a report.
 The purpose of the project is to make use of the Fast Randomized Iteration (FRI) method described in the paper by Lim and Weaver \cite{lim_weare}.
 \section{Background}
@@ -116,7 +117,7 @@ which simplifies to the trace,
 \be
   Z = \text{Tr}[\tk^N]
 \ee
-Instead of multiplying the transfer matrix N - 1 times and finding the trace of the result, we can diagonalize \tk by performing an eigendecomposition.
+Instead of multiplying the transfer matrix N - 1 times and finding the trace of the result, we can diagonalize \textbf{K} by performing an eigendecomposition.
 \be
   \tk = \textbf{X} \textbf{D} \textbf{X}^{-1}
 \ee
@@ -127,12 +128,12 @@ Since \textbf{K} and $\tk^N$ share the same eigenvectors, we can replace $\tk^N$
 \ee
 If we assume that $\lambda_1$ is the dominant eigenvalue ($\lambda_1 > \lambda_2$) then in the thermodynamic limit,
 \be
-  Z = \lambda_1^N + \lambda_2^N = \lambda_1^N \Big(1 + \frac{\lambda_2^N}{\lambda_1^N} \Big) \xrightarrow[N \rightarrow \infty]{} \lambda_1^N .
+  \lim_{N \to \infty} Z = \lim_{N \to \infty} \lambda_1^N + \lambda_2^N = \lim_{N \to \infty} \lambda_1^N \Big(1 + \frac{\lambda_2^N}{\lambda_1^N} \Big)  = \lambda_1^N .
 \ee
 This means that all we really need for the partition function is to find the dominant eigenvalue of the transfer matrix!
 
 \bibliography{mybib}
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 
 
 \end{document}
