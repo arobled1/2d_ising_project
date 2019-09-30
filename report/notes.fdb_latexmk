@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex notes"] 1569875246 "notes.aux" "notes.bbl" "notes" 1569878726
+["bibtex notes"] 1569878966 "notes.aux" "notes.bbl" "notes" 1569885809
   "/usr/local/texlive/2019/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
   "mybib.bib" 1569782558 480 6f14cec61bfcc62ed8ccc1f603eb397e ""
-  "notes.aux" 1569878726 386 62618e7cf074d733214ad75c7ea64118 "pdflatex"
+  "notes.aux" 1569885808 492 b6eeba425ab1f75e0ed3b01a3f53969a "pdflatex"
   (generated)
-  "notes.bbl"
   "notes.blg"
-["pdflatex"] 1569878725 "notes.tex" "notes.pdf" "notes" 1569878726
-  "/dev/null" 1569878725 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "notes.bbl"
+["pdflatex"] 1569885808 "notes.tex" "notes.pdf" "notes" 1569885809
+  "/dev/null" 1569885807 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -104,9 +104,9 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1557342086 4259635 562fc36ec496993777a6c428d8bfb811 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "notes.aux" 1569878726 386 62618e7cf074d733214ad75c7ea64118 "pdflatex"
-  "notes.bbl" 1569875246 411 719ff937b70a40700c1d0d48dc7b9739 "bibtex notes"
-  "notes.tex" 1569878715 9218 316ff2f241730f741c5811b59538f8b7 ""
+  "notes.aux" 1569885808 492 b6eeba425ab1f75e0ed3b01a3f53969a "pdflatex"
+  "notes.bbl" 1569878966 411 719ff937b70a40700c1d0d48dc7b9739 "bibtex notes"
+  "notes.tex" 1569885695 9404 044da8800573c24365d9d916fbc5f082 ""
   (generated)
   "notes.log"
   "notes.aux"
