@@ -117,7 +117,7 @@ The partition function can then be written in bra-ket notation as
 \be
   Z = \sum_{\sigma_1} \dots \sum_{\sigma_N} \braket{\sigma_1 | \tk | \sigma_2} \braket{\sigma_2 | \tk | \sigma_3} \dots \braket{\sigma_N | \tk | \sigma_1}
 \ee
-Since the sums are independent, we can move them around to see that we can impose the resolution of identity N - 1 times,
+Since the sums are independent, we can move them around to see that we can impose the resolution of identity $N - 1$ times,
 \be
   \begin{split}
     Z &= \sum_{\sigma_1} \bra{\sigma_1} \tk \Big[ \sum_{\sigma_2} \ket{\sigma_2} \bra{\sigma_2} \Big] \tk \Big[ \sum_{\sigma_3} \ket{\sigma_3} \bra{\sigma_3} \Big] \tk \dots \tk \Big[ \sum_{\sigma_N} \ket{\sigma_N} \bra{\sigma_N} \Big] \tk \ket{\sigma_1} \\
@@ -129,11 +129,11 @@ This leaves us with one sum and the transfer matrix being mutliplied N times,
 \be
   Z = \sum_{\sigma_1} \bra{\sigma_1} \tk^N \ket{\sigma_1}
 \ee
-which simplifies to the trace,
+which simplifies to the trace.
 \be
   Z = \text{Tr}[\tk^N]
 \ee
-Instead of multiplying the transfer matrix N - 1 times and finding the trace of the result, we can diagonalize \textbf{K} by performing an eigendecomposition.
+Instead of multiplying the transfer matrix $N - 1$ times and finding the trace of the result, we can diagonalize \textbf{K} by performing an eigendecomposition.
 \be
   \tk = \textbf{X} \textbf{D} \textbf{X}^{-1}
 \ee
