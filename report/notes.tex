@@ -40,8 +40,6 @@ The purpose of the project is to make use of the Fast Randomized Iteration (FRI)
 Since the main focus of the report is to analyze the FRI method, I will only provide enough information regarding the ising model to make sense of what the variables mean and where they come from. There are lots of resources devoted to understanding the ising model and I will pull most of my information from the paper by Cipra \cite{cipra}.
 
 \subsection{1-D Ising Model}
-The ising model is used often to understand the physics of phase transitions.
-But before diving into that, we first need to set the stage.
 Consider a 1 dimensional lattice of N points, which we call 'lattice sites'.
 The line segment between each lattice site is called a 'bond' and the lattice sites adjacent to a particular lattice site is called its 'nearest neighbors'.
 
@@ -71,9 +69,17 @@ We will first assume that each atom only feels interactions between its 'nearest
 In other words, atom $i$ will only interact with atoms $i - 1$ and $i + 1$.
 Next, we will assume what is known as the 'wrap-around' model, which means that we will consider a N-spin lattice that wraps around itself so that it takes the shape of a necklace.
 The periodic condition can be defined mathematically as $\sigma_{N+1} = \sigma_1$.
-We these assumptions in place, the Hamiltonian can be defined as,
+With these assumptions in place, the Hamiltonian can be defined as,
 \be
   H(\sigma_1, \dots, \sigma_N) = - \sum_{i} J \sigma_i \sigma_{i+1} - \sum_i B \sigma_i .
+\ee
+Juat to make the math look nicer later, we will change the second term to,
+\be
+  \sum_i B \sigma_i = \sum_i \frac{B}{2} (\sigma_i + \sigma_{i+1})
+\ee
+so that our Hamiltonian is now,
+\be \label{eq:1d_hamil}
+  H(\sigma_1, \dots, \sigma_N) = - \sum_{i} J \sigma_i \sigma_{i+1} - \sum_i \frac{B}{2} (\sigma_i + \sigma_{i+1})
 \ee
 
 In order to obtain thermodynamic quantities, we introduce the partition function as a function of the number of lattice sites N, the temperature of the system T, atomic interaction strength E, and field strength J,
@@ -91,12 +97,22 @@ Inserting this into equation (\ref{eq:partition}), we get
 \be
   Z = \sum_{\sigma_1} \dots \sum_{\sigma_N} e^{-\beta E(\sigma_1, \sigma_2)} e^{-\beta E(\sigma_2, \sigma_3)} \dots e^{- \beta E(\sigma_N, \sigma_1)}
 \ee
-where $E(\sigma_i, \sigma_j)$ is the energy
+where $E(\sigma_i, \sigma_{i+1})$ is the energy associated with the Hamiltonian in equation (\ref{eq:1d_hamil}).
 Using bra-ket notation, we can define a transfer matrix \textbf{K}, where each element is
 \be
   K_{\sigma_i \sigma_j} = \braket{\sigma_i | \tk | \sigma_j} = e^{- \beta E(\sigma_i, \sigma_j)} .
 \ee
 Since $\sigma_i$ only has two states, the transfer matrix is a 2x2 matrix.
+We can find the elements by plugging in the possible states of $\sigma_i$.
+\be
+  \begin{split}
+    \bra{+1} \tk \ket{+1} &= e^{\beta(J + B)} \\
+    \bra{+1} \tk \ket{-1} &= e^{- \beta(J)} \\
+    \bra{-1} \tk \ket{+1} &= e^{- \beta(J)} \\
+    \bra{-1} \tk \ket{-1} &= e^{\beta(J - B)} \\
+  \end{split}
+\ee
+
 The partition function can then be written in bra-ket notation as
 \be
   Z = \sum_{\sigma_1} \dots \sum_{\sigma_N} \braket{\sigma_1 | \tk | \sigma_2} \braket{\sigma_2 | \tk | \sigma_3} \dots \braket{\sigma_N | \tk | \sigma_1}
