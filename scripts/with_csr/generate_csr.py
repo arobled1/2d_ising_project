@@ -10,9 +10,9 @@ def tran_mat(n, b, t):
     aa_inv = np.exp(-(2 - b) / t )
     bb_inv = np.exp(b/t)
     cc_inv = np.exp((2+b) / t)
-
-    # Initialize transfer matrix
-    trans_mat = np.zeros((d,d))
+    print(aa, aa_inv)
+    print(bb, bb_inv)
+    print(cc, cc_inv)
     # Populate matrix
 
     val = []
