@@ -12,8 +12,8 @@
 # Date: 9/26/19
 #===============================================================================
 # Output:
-# Iteration #: 161
-# Dominant eigenvalue is: 2.6145152555104674
+# Iteration #: 505
+# Dominant eigenvalue is: 2.613278478020061
 #===============================================================================
 # Note:
 #   Decreasing the value of the tolerance will mean more iterations needed for
