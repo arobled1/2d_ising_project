@@ -2,7 +2,7 @@
 # Description:
 # Finds the dominant eigenvalue and associated eigenvector of the transfer
 # matrix, as described in paper by Lim and Weare, using the Power Method,
-# aka Power Iteration.
+# aka Power Iteration with the CSR method.
 # The user must specify an intial vector to represent the dominant eigenvector.
 # The initial vector is usually chosen to be an array of ones or some unit
 # vector (e.g. [1 0 0]).
@@ -10,10 +10,6 @@
 #===============================================================================
 # Author: Alan Robledo
 # Date: 9/26/19
-#===============================================================================
-# Output:
-# Iteration #: 161
-# Dominant eigenvalue is: 2.6145152555104674
 #===============================================================================
 # Note:
 #   Decreasing the value of the tolerance will mean more iterations needed for
