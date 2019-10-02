@@ -149,12 +149,42 @@ If we assume that $\lambda_1$ is the dominant eigenvalue ($\lambda_1 > \lambda_2
 This means that all we really need for the partition function is to find the dominant eigenvalue of the transfer matrix!
 
 \subsection{2-D Ising Model}
-In the 2-D case, the transfer matrix becomes a $2^N$x$2^N$ matrix.
+In the 2-D case of a periodic lattice, the transfer matrix becomes a $2^N$x$2^N$ matrix, where N is the number of lattice sites (or atoms/spins in our scenario).
 But the partition function is still defined as
 \be
   Z = \text{Tr}[ \tk^N ]
 \ee
-If we had
+where \textbf{K} is again the transfer matrix.
+This means that, like in the 1D case, we are interested in knowing what the dominant eigenvalue of the transfer matrix is.
+Using notation from the Lim and Weaver paper \cite{lim_weare}, the transfer matrix has the following form in the case of $N = 2$,
+\be
+  \tk =
+    \begin{bmatrix}
+    a & & a^{-1} & \\
+    b & & b^{-1} & \\
+      & b & & b^{-1} \\
+      & c & & c^{-1} \\
+    \end{bmatrix}
+\ee
+and the following form in the case of $N = 3$,
+\be
+  \tk =
+    \begin{bmatrix}
+    a & & & & a^{-1} & & & & \\
+    b & & & & b^{-1} & & & & \\
+      & a & & & & a^{-1} & & & \\
+      & b & & & & b^{-1} & & & \\
+      &   & b & & & & b^{-1} & & \\
+      &   & c & & & & c^{-1} & & \\
+      &   &   & b & & & & b^{-1} & \\
+      &   &   & c & & & & c^{-1} & \\
+    \end{bmatrix}
+\ee
+where
+\be
+  a = e^{(2-B)/T} , \quad b = e^{-B/T} , \quad c = e^{-(2+B)/T} .
+\ee
+
 \bibliography{mybib}
 \bibliographystyle{unsrt}
 
