@@ -28,7 +28,7 @@ from numba import jit
 @jit(nopython=True)
 def power_iter(max_iterations, tolerance, matrix, vec):
     # Finding l-infinity norm of initial vector x
-    xp = abs(max(vec, key=abs))
+    xp = max(max(vec),-min(vec))
     # Rescaling the initial vector to prevent from blowing up
     vec = vec / xp
     i = 0
@@ -80,17 +80,14 @@ tol = 10**-7
 
 # Bottom block gives complilation time + runtime
 start = time.time()
-trans_mat = generate.tran_mat(n, b, t)
+trans_mat = generate_full.tran_mat(n, b, t)
 power_iter(max_iter, tol, trans_mat, init_vec)
 end = time.time()
 print("Time (with compilation)", end - start)
 
 # Bottom block is just for runtime
 start = time.time()
-trans_mat = generate.tran_mat(n, b, t)
+trans_mat = generate_full.tran_mat(n, b, t)
 iterations, eigenvalue = power_iter(max_iter, tol, trans_mat, init_vec)
 end = time.time()
 print("Time (without compilation)", end - start)
-
-# trans_mat = generate_full.tran_mat(n, b, t)
-# power_iter(max_iter, tol, trans_mat, init_vec)
