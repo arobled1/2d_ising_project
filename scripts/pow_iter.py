@@ -19,6 +19,7 @@
 #   Decreasing the value of the tolerance will mean more iterations needed for
 #   convergence.
 #===============================================================================
+import time
 import numpy as np
 import generate_full
 
@@ -74,5 +75,19 @@ max_iter = 600
 # Tolerance (set by user)
 tol = 10**-7
 
-trans_mat = generate_full.tran_mat(n, b, t)
+# Bottom block gives complilation time + runtime
+start = time.time()
+trans_mat = generate.tran_mat(n, b, t)
 power_iter(max_iter, tol, trans_mat, init_vec)
+end = time.time()
+print("Time (with compilation)", end - start)
+
+# Bottom block is just for runtime
+start = time.time()
+trans_mat = generate.tran_mat(n, b, t)
+iterations, eigenvalue = power_iter(max_iter, tol, trans_mat, init_vec)
+end = time.time()
+print("Time (without compilation)", end - start)
+
+# trans_mat = generate_full.tran_mat(n, b, t)
+# power_iter(max_iter, tol, trans_mat, init_vec)
