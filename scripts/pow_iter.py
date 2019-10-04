@@ -48,8 +48,8 @@ def power_iter(max_iterations, tolerance, matrix, vec):
                 y[j] = matrix[j][odd] * vec[odd] + matrix[j][shift2] * vec[shift2]
         # Finding the l-infinity norm of the result from Ax.
         # This serves as the dominant eigenvalue.
-        eig_val = abs(max(y, key=abs))
-        error = abs(max(vec - (y/eig_val), key=abs))
+        eig_val = max(max(y),-min(y))
+        error = max(max(vec - (y/eig_val)),-min(vec - (y/eig_val)))
         vec = y / eig_val
         print("Iteration #:", i)
         print("Eigenvalue", eig_val)
