@@ -33,7 +33,15 @@ def power_iter(max_iterations, tolerance, matrix, vec):
         # Reset y before matrix multiply
         y = np.zeros(d)
         # Matrix multiplying A with the initial vector x
-        y = np.matmul(matrix, vec)
+        for j in range(d):
+            even = j//2
+            shift1 = j//2 + 2**(n-1)
+            odd = (j-1)//2
+            shift2 = (j-1)//2 + 2**(n-1)
+            if j % 2 == 0:
+                y[j] = matrix[j][even] * vec[even] + matrix[j][shift1] * vec[shift1]
+            else:
+                y[j] = matrix[j][odd] * vec[odd] + matrix[j][shift2] * vec[shift2]
         # Finding the l-infinity norm of the result from Ax.
         # This serves as the dominant eigenvalue.
         eig_val = abs(max(y, key=abs))
