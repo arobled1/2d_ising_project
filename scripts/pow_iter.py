@@ -22,7 +22,10 @@
 import time
 import numpy as np
 import generate_full
+import numba
+from numba import jit
 
+@jit(nopython=True)
 def power_iter(max_iterations, tolerance, matrix, vec):
     # Finding l-infinity norm of initial vector x
     xp = abs(max(vec, key=abs))

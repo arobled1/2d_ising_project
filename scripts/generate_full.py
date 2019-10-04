@@ -1,5 +1,8 @@
+import numba
+from numba import jit
 import numpy as np
 
+@jit(nopython=True)
 def tran_mat(n, b, t):
     # matrix dimension dxd
     d = 2**n
