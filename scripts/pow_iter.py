@@ -12,7 +12,6 @@
 # Modified Date: 10/4/19
 #===============================================================================
 # Output:
-# Iteration #: 505
 # Dominant eigenvalue is: 2.613278478020
 #===============================================================================
 # Note:
@@ -26,14 +25,12 @@ import numba
 from numba import jit
 
 @jit(nopython=True)
-def power_iter(max_iterations, tolerance, matrix, vec):
+def power_iter(max_iterations, matrix, vec):
     # Finding l-infinity norm of initial vector x
     xp = max(max(vec),-min(vec))
     # Rescaling the initial vector to prevent from blowing up
     vec = vec / xp
-    i = 0
-    while i < max_iterations:
-        i += 1
+    for i in range(max_iterations):
         # Reset y before matrix multiply
         y = np.zeros(d)
         # Matrix multiplying A with the initial vector x
@@ -49,13 +46,10 @@ def power_iter(max_iterations, tolerance, matrix, vec):
         # Finding the l-infinity norm of the result from Ax.
         # This serves as the dominant eigenvalue.
         eig_val = max(max(y),-min(y))
-        error = max(max(vec - (y/eig_val)),-min(vec - (y/eig_val)))
         vec = y / eig_val
         # If you want to see eigenvalue at each iteration, uncomment line below
     #    print("Iteration #:",i,"    Eigenvalue:",eig_val)
-        if error < tolerance:
-            break
-    return i, eig_val
+    return eig_val
 
 n = 5     # number of spins
 d = 2**n  # matrix dimension dxd
@@ -67,29 +61,22 @@ init_vec = np.zeros(d)
 init_vec[0] = 1
 # Max number of iterations (set by user)
 max_iter = 600
-# Tolerance (set by user)
-tol = 10**-7
 
 # Bottom block gives complilation time + runtime
 start = time.time()
 trans_mat = generate_full.tran_mat(n, b, t)
-power_iter(max_iter, tol, trans_mat, init_vec)
+power_iter(max_iter, trans_mat, init_vec)
 end = time.time()
 
 # Bottom block is just for runtime
 start = time.time()
 trans_mat = generate_full.tran_mat(n, b, t)
-iterations, eigenvalue = power_iter(max_iter, tol, trans_mat, init_vec)
+eigenvalue = power_iter(max_iter, trans_mat, init_vec)
 end = time.time()
 
 eig_file = open("data.dat", 'w')
-if iterations == max_iter:
-    eig_file.write("Exceeded max iterations. Try a new initial vector.\n")
-    eig_file.write("Number of iterations: %d\n" % iterations)
-else:
-    eig_file.write("Success!\n")
-    eig_file.write("Number of iterations: %d\n" % iterations)
+eig_file.write("Number of iterations: %d\n" % max_iter)
 eig_file.write("Dominant eigenvalue is: %.12f\n" % eigenvalue)
-eig_file.write("Time (in seconds): %.12f" % (end - start))
+eig_file.write("Time (in seconds): %.12f\n" % (end - start))
 eig_file.close()
 print("Check 'data.dat' for results!")
