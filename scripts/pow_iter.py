@@ -12,7 +12,8 @@
 # Modified Date: 10/4/19
 #===============================================================================
 # Output:
-# Dominant eigenvalue is: 2.613278478020
+# Number of iterations: 300
+# Dominant eigenvalue is: 2.613308143953
 #===============================================================================
 # Note:
 #   Decreasing the value of the tolerance will mean more iterations needed for
@@ -60,7 +61,7 @@ t = 2.2   # temperature
 init_vec = np.zeros(d)
 init_vec[0] = 1
 # Max number of iterations (set by user)
-max_iter = 600
+max_iter = 300
 
 # Bottom block gives complilation time + runtime
 start = time.time()
